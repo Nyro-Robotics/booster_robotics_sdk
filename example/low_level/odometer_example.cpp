@@ -1,3 +1,12 @@
+/**
+ * @file odometer_example.cpp
+ * @brief Subscribes to and prints odometry data published by the B1 robot.
+ *
+ * Odometry provides an estimate of the robot's change in position and orientation
+ * over time based on its own motion sensors (like leg joint movements).
+ * This program listens for these odometry messages and prints the received
+ * pose (position and orientation) data.
+ */
 #include <booster/robot/channel/channel_subscriber.hpp>
 #include <booster/idl/b1/Odometer.h>
 #include <booster/robot/b1/b1_api_const.hpp>

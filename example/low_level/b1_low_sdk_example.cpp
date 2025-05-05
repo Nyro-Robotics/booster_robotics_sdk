@@ -1,3 +1,13 @@
+/**
+ * @file b1_low_sdk_example.cpp
+ * @brief Demonstrates low-level joint control for the B1 robot using the SDK.
+ *
+ * This example sends direct position, stiffness (kp), and damping (kd) commands
+ * to individual joints across the robot's body (head, arms, waist, legs).
+ * It requires the robot to be switched to a specific "Custom" mode to accept
+ * these low-level commands. This allows for fine-grained control over motor behavior.
+ * Requires the network interface as a command-line argument.
+ */
 #include <array>
 #include <chrono>
 #include <iostream>

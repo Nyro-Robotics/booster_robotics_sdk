@@ -1,3 +1,11 @@
+"""
+Basic example of publishing low-level commands to the B1 robot using Python.
+
+This script demonstrates the fundamental structure of initializing a publisher
+for sending LowCmd messages (containing detailed joint commands like position,
+kp, kd) to the robot's low-level control interface. It sets up the
+communication channel but may not contain a continuous control loop itself.
+"""
 import time
 from booster_robotics_sdk_python import ChannelFactory, B1LowCmdPublisher, LowCmd, LowCmdType, MotorCmd, B1JointCnt, B1JointIndex
 

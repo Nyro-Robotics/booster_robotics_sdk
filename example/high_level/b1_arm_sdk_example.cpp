@@ -1,3 +1,13 @@
+/**
+ * @file b1_arm_sdk_example.cpp
+ * @brief Demonstrates high-level control of the B1 robot's standard arms using the SDK.
+ *
+ * This example sends commands to initialize the arms and then move them
+ * smoothly from a starting configuration to a target configuration.
+ * It showcases how to publish joint control commands for the primary arm joints
+ * via the high-level SDK.
+ * Requires the network interface as a command-line argument.
+ */
 #include <array>
 #include <chrono>
 #include <iostream>

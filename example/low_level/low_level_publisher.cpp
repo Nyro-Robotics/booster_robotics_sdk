@@ -1,3 +1,13 @@
+/**
+ * @file low_level_publisher.cpp
+ * @brief Basic example of publishing low-level commands to the B1 robot.
+ *
+ * This program demonstrates the fundamental structure of initializing a publisher
+ * for sending LowCmd messages (containing detailed joint commands like position,
+ * kp, kd) to the robot's low-level control interface. It sets up the
+ * communication channel but may not contain a continuous control loop itself.
+ * Requires the network interface as a command-line argument.
+ */
 #include <booster/robot/channel/channel_publisher.hpp>
 #include <booster/robot/b1/b1_api_const.hpp>
 #include <booster/idl/b1/LowCmd.h>

@@ -1,4 +1,12 @@
-from booster_robotics_sdk_python import ChannelFactory, B1OdometerStateSubscriber
+"""
+Subscribes to and prints odometry data published by the B1 robot using Python.
+
+Odometry provides an estimate of the robot's change in position and orientation
+over time based on its own motion sensors (like leg joint movements).
+This script listens for these odometry messages and prints the received
+pose (position and orientation) data.
+"""
+from booster_robotics_sdk_python import ChannelFactory, OdometrySubscriber, Odometry
 import time
 
 

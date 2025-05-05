@@ -1,3 +1,14 @@
+/**
+ * @file b1_7dof_arm_low_sdk_example.cpp
+ * @brief Demonstrates low-level joint control specifically for the B1 robot's 7-DOF arms.
+ *
+ * This example sends direct position, stiffness (kp), and damping (kd) commands
+ * to the individual joints of the 7-DOF arms (7 joints per arm).
+ * Similar to other low-level examples, it likely requires the robot to be in
+ * "Custom" mode and provides fine-grained control over the arm's motor behavior,
+ * moving the arms between configurations by specifying joint-level targets.
+ * Requires the network interface as a command-line argument.
+ */
 #include <array>
 #include <chrono>
 #include <iostream>

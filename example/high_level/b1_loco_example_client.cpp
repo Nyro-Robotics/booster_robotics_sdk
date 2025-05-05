@@ -1,3 +1,13 @@
+/**
+ * @file b1_loco_example_client.cpp
+ * @brief Demonstrates sending various high-level commands to the B1 robot via the Loco Client API.
+ *
+ * This example shows how to command the robot to perform actions such as
+ * walking, changing posture, and controlling the hands (including specific gestures
+ * like Rock, Paper, Scissors, Grasp, OK). It connects to the robot's
+ * locomotion service to send these commands.
+ * Requires the network interface as a command-line argument.
+ */
 #include <booster/robot/b1/b1_loco_client.hpp>
 
 #include <chrono>

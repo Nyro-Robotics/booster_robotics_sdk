@@ -1,3 +1,12 @@
+/**
+ * @file low_level_hand_data_subscriber.cpp
+ * @brief Subscribes to and prints low-level data from the B1 robot's dexterous hands.
+ *
+ * This program listens to the specific topic where the robot publishes detailed
+ * hand sensor data, including finger angles, forces, currents, temperatures,
+ * status, and error codes for each finger joint. It then prints this received data
+ * to the standard output.
+ */
 #include <booster/robot/channel/channel_subscriber.hpp>
 #include <booster/idl/b1/HandReplyData.h>
 

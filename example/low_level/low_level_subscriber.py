@@ -1,4 +1,13 @@
-from booster_robotics_sdk_python import ChannelFactory, B1LowStateSubscriber
+"""
+Basic example of subscribing to the B1 robot's general low-level state data using Python.
+
+This script demonstrates how to initialize a subscriber to listen for
+LowState messages published by the robot. These messages contain detailed
+real-time information about the state of the robot's motors and sensors
+(e.g., joint positions, velocities, foot forces). It includes a handler
+function to process the received data (e.g., print it).
+"""
+from booster_robotics_sdk_python import ChannelFactory, B1LowStateSubscriber, LowState
 import time
 
 

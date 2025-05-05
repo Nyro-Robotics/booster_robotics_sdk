@@ -1,3 +1,12 @@
+/**
+ * @file b1_7dof_arm_sdk_example.cpp
+ * @brief Demonstrates high-level control of the B1 robot's 7-DOF arms using the SDK.
+ *
+ * This example sends commands to initialize the arms and then move them
+ * from a starting configuration to a target configuration over a set period.
+ * It showcases how to publish joint control commands via the high-level SDK.
+ * Requires the network interface as a command-line argument.
+ */
 #include <array>
 #include <chrono>
 #include <iostream>

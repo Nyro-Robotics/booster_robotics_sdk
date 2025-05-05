@@ -1,3 +1,12 @@
+"""
+Demonstrates sending low-level joint commands to the B1 robot using Python,
+specifically for use when the robot is in a "Custom" control mode.
+
+This script shows how to construct and publish LowCmd messages containing
+target position (q), velocity (dq, usually 0 here), feedforward torque (tau, usually 0),
+stiffness (kp), and damping (kd) for individual joints.
+It includes commented-out examples for both PARALLEL and SERIAL command types.
+"""
 import time
 from booster_robotics_sdk_python import ChannelFactory, B1LowCmdPublisher, LowCmd, LowCmdType, MotorCmd, B1JointCnt, B1JointIndex
 
