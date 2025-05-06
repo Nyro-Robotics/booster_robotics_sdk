@@ -91,10 +91,10 @@ export PATH=/home/[user name]/.local/bin:$PATH
     
     ```bash
     cd ~/Documents/cursor/booster_gym/deploy/
-    python deploy.py
+    python deploy.py # deploying a built-in walking model
     
     ```
-    
+
 ## License
 
 This project is licensed under the Apache License, Version 2.0. See the LICENSE file for details.
