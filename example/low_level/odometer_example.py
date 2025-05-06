@@ -6,7 +6,7 @@ over time based on its own motion sensors (like leg joint movements).
 This script listens for these odometry messages and prints the received
 pose (position and orientation) data.
 """
-from booster_robotics_sdk_python import ChannelFactory, OdometrySubscriber, Odometry
+from booster_robotics_sdk_python import ChannelFactory, B1OdometerStateSubscriber
 import time
 
 

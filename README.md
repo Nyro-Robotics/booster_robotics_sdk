@@ -56,6 +56,45 @@ if pybind11-stubgen cannot be found even after pip install, export PATH
 export PATH=/home/[user name]/.local/bin:$PATH
 ```
 
+---
+
+## Setting up within a conda environment
+
+1. Update your conda environment with the latest libstdcxx-ng:
+    
+    ```bash
+    conda activate nzbooster
+    conda install -c conda-forge libstdcxx-ng
+    
+    ```
+    
+2. `pip install clean_requirements.txt` (all requirements from requirements.txt that aren’t originally usable)
+3. Rebuild the Python bindings:
+    
+    ```bash
+    cd ~/Documents/cursor/booster_robotics_sdk
+    mkdir -p build
+    cd build
+    cmake .. -DBUILD_PYTHON_BINDING=on
+    make
+    
+    ```
+    
+4. Copy the built module to your conda environment (you can get this from robot’s original build. Paths/build-in Linux dependencies make this difficult to build directly in a conda environment):
+    
+    ```bash
+    cp ./booster_robotics_sdk_python.cpython-310-x86_64-linux-gnu.so $(python -c "import site; print(site.getsitepackages()[0])")
+    
+    ```
+    
+5. Test your script:
+    
+    ```bash
+    cd ~/Documents/cursor/booster_gym/deploy/
+    python deploy.py
+    
+    ```
+    
 ## License
 
 This project is licensed under the Apache License, Version 2.0. See the LICENSE file for details.
